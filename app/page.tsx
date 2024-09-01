@@ -4,13 +4,14 @@ import Link from "next/link";
 import aboutus from "../public/Sapore.webp";
 import { Cards } from "./components/Cards";
 import { Texts } from "./components/Texts";
+import { Footer } from "./components/Footer";
 
 
 
 export default function Home() {
   return (
     <>
-      <div className="flex items-end relative h-96 w-full box-content 
+      <div className="flex items-end relative h-[30rem] w-full box-content 
     bg-sapore-room bg-center bg-no-repeat bg-cover z-10 before:content-[''] 
     before:absolute before:inset-0 before:block before:bg-gradient-to-t 
     before:from-black before:opacity-80 before:z-[-5] md:h-[38rem] 
@@ -33,6 +34,7 @@ export default function Home() {
           <Texts text="aboutUs" styles="text-white text-2xl z-20 absolute drop-shadow-md" />
         </Link>
       </div>
+      <Footer />
     </>
   );
 }

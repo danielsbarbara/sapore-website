@@ -13,11 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col items-center">
+      <body className="min-h-screen flex flex-col relative">
         <LanguageProvider>
           <Header />
-          {children}
-          <Footer />
+          <main className="max-w-7xl mx-auto w-full">
+            {children}
+          </main>
         </LanguageProvider>
       </body>
     </html>

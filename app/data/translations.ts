@@ -79,6 +79,41 @@ export const translations: any = {
         en: 'About us',
         fr: 'A propos de nous'
     },
+    topNavigationHomePage: {
+        pt: 'Página Principal',
+        en: 'Home Page',
+        fr: 'Page d\'accueil'
+    },
+    topNavigationMenuPage:{
+        pt: 'Menu',
+        en: 'Menu',
+        fr: 'Menu'
+    },
+    secNavigationSugestions: {
+        pt: 'Sugestão do Dia',
+        en: 'Tip of the Day',
+        fr: 'Conseil du jour'
+    },
+    secNavigationMenu: {
+        pt: 'Ementa',
+        en: 'Menu',
+        fr: 'Menu'
+    },
+    tipsOfDay: {
+        pt: 'Sugestões do dia',
+        en: 'Suggestions of the day',
+        fr: 'Suggestions du jour'
+    },
+    tipsOfDay1: {
+        pt: '(Só ao Almoço)',
+        en: '(Lunch Only)',
+        fr: '(Déjeuner uniquement)'
+    },
+    tipsOfDayIngredients:{
+        pt: 'Ingredientes:',
+        en: 'Ingredients:',
+        fr: 'Ingrédients:'
+    },
     footer1: {
         pt:'Restaurante Sapore',
         en:'Restaurant Sapore',
