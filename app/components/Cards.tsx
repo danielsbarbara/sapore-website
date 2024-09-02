@@ -7,29 +7,66 @@ import desserts from '../../public/desserts.jpg'
 import drinks from "../../public/drinks.jpg"
 
 const images = [
-  { img: menu, description: 'menu' },
-  { img: wines, description: 'wines' },
-  { img: desserts, description: 'desserts' },
-  { img: drinks, description: 'drinks' },
+  { img: menu, label: 'menu', description: 'menuDescription' },
+  { img: wines, label: 'wines', description: 'winesDescription' },
+  { img: desserts, label: 'desserts', description: 'dessertsDescription' },
+  { img: drinks, label: 'drinks', description: 'drinksDescription' },
 ]
 
 export const Cards: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-7 bg-orange-300 h-full 
-      w-full py-5 md:max-w-7xl md:flex justify-center">
-      {images.map(image =>
-        <Link href={`/${image.description === 'menu' ?
-          `${image.description}/tip-of-day` :
-          image.description}`}
-          className="flex flex-col justify-end items-center">
-          <Image
-            className="object-cover rounded-xl"
-            height={160}
-            width={160}
-            src={image.img}
-            alt={`${image.description} image`} />
-          <Texts text={image.description} styles="text-white text-2xl z-20 absolute drop-shadow-md" />
-        </Link>)}
+    <div className="py-5 bg-orange-300">
+      {images.map((image, i: number) =>
+        i % 2 == 0 ?
+          <div className="w-full h-48 relative md:h-80" key={i}>
+            <Image
+              fill
+              className="object-cover"
+              src={image.img}
+              alt={`${image.label} image`} />
+            <div className="absolute w-full h-full bg-gradient-to-r from-black grid grid-cols-2">
+              <Texts text={image.description} styles="text-white text-sm max-w-64 self-center px-2 md:text-xl md:justify-self-center" />
+              <div className="flex flex-col justify-between">
+                <Image
+                  src="/Sapore Logo.webp"
+                  height={80}
+                  width={80}
+                  className="p-3 self-end md:self-center"
+                  alt="sapore logo" />
+                <Link href={`/${image.label === 'menu' ?
+                  `${image.label}/tip-of-day` :
+                  image.label}`}
+                  className="text-white self-end flex justify-center py-2 px-4 md:p-5 md:self-center">
+                  <Texts text={image.label} styles="text-white self-end bg-orange-400 rounded-lg px-4 md:px-5 md:py-2" />
+                </Link>
+              </div>
+            </div>
+          </div> :
+          <div className="w-full h-48 relative md:h-80" key={i}>
+            <Image
+              fill
+              className="object-cover"
+              src={image.img}
+              alt={`${image.label} image`} />
+            <div className="absolute w-full h-full bg-gradient-to-l from-black grid grid-cols-2">
+              <div className="flex flex-col justify-between">
+                <Image
+                  src="/Sapore Logo.webp"
+                  height={80}
+                  width={80}
+                  className="p-3 self-start md:self-center"
+                  alt="sapore logo" />
+                <Link href={`/${image.label === 'menu' ?
+                  `${image.label}/tip-of-day` :
+                  image.label}`}
+                  className="text-white self-start flex py-2 px-4 md:p-5 md:self-center">
+                  <Texts text={image.label} styles="text-white self-end bg-orange-400 rounded-lg p-1 md:px-5 md:py-2" />
+                </Link>
+              </div>
+              <Texts text={image.description} styles="text-white text-right max-w-64 justify-self-end text-sm self-center px-2 md:text-xl md:justify-self-center" />
+            </div>
+          </div>
+      )}
     </div>
   )
 }

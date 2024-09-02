@@ -1,7 +1,7 @@
 const page: React.FC = () => {
     return (
-        <div>
-            Pizzas, peixe , gelados 
+        <div className="flex justify-between px-1">
+            
         </div>
     )
 }

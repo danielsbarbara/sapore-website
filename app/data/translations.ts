@@ -79,6 +79,26 @@ export const translations: any = {
         en: 'About us',
         fr: 'A propos de nous'
     },
+    menuDescription:{
+        pt: 'Delicie-se com nossas pizzas artesanais e massas frescas, preparadas com o autêntico sabor italiano.',
+        en: 'Enjoy our handmade pizzas and fresh pasta, prepared with authentic Italian flavor.',
+        fr: 'Savourez nos pizzas faites à la main et nos pâtes fraîches, préparées avec une authentique saveur italienne.'
+    },
+    winesDescription: {
+        pt: 'Descubra nossa seleção de vinhos, cuidadosamente escolhidos para acompanhar e realçar o sabor de cada prato.',
+        en: 'Discover our selection of wines, carefully chosen to accompany and enhance the flavor of every dish.',
+        fr: 'Découvrez notre sélection de vins, soigneusement choisis pour accompagner et rehausser la saveur de chaque plat.'
+    },
+    dessertsDescription: {
+        pt: 'Encante-se com nossas sobremesas caseiras, feitas com receitas tradicionais italianas para adoçar sua experiência.',
+        en: 'Delight in our homemade desserts, made using traditional Italian recipes to sweeten your experience.',
+        fr: 'Délectez-vous de nos desserts maison, préparés selon des recettes italiennes traditionnelles, pour adoucir votre expérience.'
+    },
+    drinksDescription: {
+        pt: 'Acompanhe sua refeição com nossa variedade de bebidas, desde refrescantes sucos e coquetéis a tradicionais licores italianos.',
+        en: 'Accompany your meal with our range of drinks, from refreshing juices and cocktails to traditional Italian liqueurs.',
+        fr: 'Accompagnez votre repas avec notre gamme de boissons, des jus et cocktails rafraîchissants aux liqueurs italiennes traditionnelles.'
+    },
     topNavigationHomePage: {
         pt: 'Página Principal',
         en: 'Home Page',
@@ -98,6 +118,36 @@ export const translations: any = {
         pt: 'Ementa',
         en: 'Menu',
         fr: 'Menu'
+    },
+    menuNavigationEntries: {
+        pt: 'Entradas 🥖',
+        en: 'Entries 🥖',
+        fr: 'Entrées 🥖'
+    },
+    menuNavigationPasta: {
+        pt: 'Massas 🍝',
+        en: 'Pastas 🍝',
+        fr: 'Pastas 🍝'
+    },
+    menuNavigationSalads: {
+        pt: 'Saladas 🥗',
+        en: 'Salads 🥗',
+        fr: 'Salades 🥗'
+    },
+    menuNavigationPizzas: {
+        pt: 'Pizzas 🍕',
+        en: 'Pizzas 🍕',
+        fr: 'Pizza 🍕'
+    },
+    menuNavigationFish: {
+        pt: 'Peixe 🐟',
+        en: 'Fish 🐟',
+        fr: 'Poisson 🐟'
+    },
+    menuNavigationMeat: {
+        pt: 'Carne 🥩',
+        en: 'Meat 🥩',
+        fr: 'Viande 🥩'
     },
     tipsOfDay: {
         pt: 'Sugestões do dia',

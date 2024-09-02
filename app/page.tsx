@@ -6,8 +6,6 @@ import { Cards } from "./components/Cards";
 import { Texts } from "./components/Texts";
 import { Footer } from "./components/Footer";
 
-
-
 export default function Home() {
   return (
     <>

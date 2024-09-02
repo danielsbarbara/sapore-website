@@ -2,6 +2,10 @@ import { Texts } from "@/app/components/Texts"
 import { TipCards, TipsCards } from "@/app/components/TipsCards"
 import { getTipDay } from "@/app/server/mongoCRUD"
 
+export const metadata = {
+    title: 'Tips Of the Day'
+}
+
 const page: React.FC = async() => {
     const tips = await getTipDay() as TipCards[]
     return (

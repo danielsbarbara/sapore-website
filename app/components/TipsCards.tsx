@@ -18,8 +18,8 @@ export interface TipCards {
             en: string,
             fr: string
         },
-         price: string
-         imageUrl: string
+        price: string
+        imageUrl: string
     }]
 }
 
@@ -31,31 +31,33 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
     const { language } = useLanguage()
     const { day, menu } = tip
     return (
-        <div className="flex flex-col items-center py-4 gap-3 w-full">
+        <div className="flex flex-col items-center py-4 gap-3 w-full
+        max-w-[48rem]">
             <div className="bg-orange-200 w-full text-center px-2 py-4
-            font-bold">
+            font-bold text-xl">
                 <p>{day[language as keyof typeof day]}</p>
             </div>
-            {menu.map(_menu => 
-            <div className="flex flex-col gap-2 w-full border-b-2 border-orange-200 p-2">
-            <div className="flex justify-between w-full">
-                <p className="font-bold">{_menu.name}</p>
-                <span>{_menu.price}€</span>
-            </div>
-            <div className="flex justify-between items-center w-full px-2">
-                <div className="relative w-36 h-36">
-                    <Image
-                        fill
-                        className="object-cover rounded-lg"
-                        src={_menu.imageUrl}
-                        alt={`${_menu.name} image`} />
+            {menu.map(_menu =>
+                <div className="flex flex-col gap-2 w-full border-b-2 
+                border-orange-200 p-2 max-w-xl">
+                    <div className="flex justify-between w-full">
+                        <p className="font-bold">{_menu.name}</p>
+                        <span>{_menu.price}€</span>
+                    </div>
+                    <div className="flex justify-between items-center w-full px-2">
+                        <div className="relative w-36 h-36">
+                            <Image
+                                fill
+                                className="object-cover rounded-lg"
+                                src={_menu.imageUrl}
+                                alt={`${_menu.name} image`} />
+                        </div>
+                        <div>
+                            <Texts text="tipsOfDayIngredients" styles="font-bold" />
+                            <p className="w-48">{_menu.ingredients[language as keyof typeof _menu.ingredients]}</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <Texts text="tipsOfDayIngredients" styles="font-bold"/>
-                    <p className="w-48">{_menu.ingredients[language as keyof typeof _menu.ingredients]}</p>
-                </div>
-            </div>
-            </div>
             )}
         </div>
     )
