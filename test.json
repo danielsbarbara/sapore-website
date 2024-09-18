@@ -1,0 +1,36 @@
+{
+    "menuType": "salads",
+    "pt": {
+        "name": "Saladas",
+        "food": [
+            {
+                "name": "Insalata Mista",
+                "price": "3.90",
+                "description": "alface, tomate, cebola, cenoura e milho",
+                "imageUrl": "/InsalataMista.jpeg"
+            }
+        ]
+    },
+    "en": {
+        "name": "Salads",
+        "food": [
+            {
+                "name": "Insalata Mista",
+                "price": "3.90",
+                "description": "lettuce, tomatoes, onions, carrots and corn",
+                "imageUrl": "/InsalataMista.jpeg"
+            }
+        ]
+    },
+    "fr": {
+        "name": "Salades",
+        "food": [
+            {
+                "name": "Insalata Mista",
+                "price": "3.90",
+                "description": "laitue, tomates, oignons, carottes et maïs",
+                "imageUrl": "/InsalataMista.jpeg"
+            }
+        ]
+    }
+}

@@ -109,6 +109,11 @@ export const translations: any = {
         en: 'Menu',
         fr: 'Menu'
     },
+    topNavigationDessertsPage:{
+        pt: 'Sobremesas',
+        en: 'Desserts',
+        fr: 'Desserts'
+    },
     secNavigationSugestions: {
         pt: 'Sugestão do Dia',
         en: 'Tip of the Day',
@@ -148,6 +153,36 @@ export const translations: any = {
         pt: 'Carne 🥩',
         en: 'Meat 🥩',
         fr: 'Viande 🥩'
+    },
+    dessertsNavigationSweets: {
+        pt: 'Doces',
+        en: 'Sweets',
+        fr: 'Bonbons'
+    },
+    dessertsNavigationIceCream: {
+        pt: 'Gelados',
+        en: 'Ice Creams',
+        fr: 'Glaces'
+    },
+    saladsIntro:{
+        pt:'Todas as saladas são temperadas',
+        en: 'All salads are seasoned',
+        fr: 'Toutes les salades sont assaisonnées'
+    },
+    pizzasIntro: {
+        pt: 'Todas as pizzas têm molho de tomate molho de tomate e queijo mozarella.',
+        en: 'All pizzas have tomato sauce and mozzarella cheese.',
+        fr: 'Toutes les pizzas contiennent de la sauce tomate et de la mozzarella.'
+    },
+    fishIntro: {
+        pt: 'Todos os peixes são acompanhados com batatas cozidas e legumes ou salada.',
+        en: 'All fish is served with boiled potatoes and vegetables or salad',
+        fr: 'Tous les poissons sont servis avec des pommes de terre bouillies et des légumes ou une salade.'
+    },
+    meatIntro: {
+        pt: 'Todas as carnes são acompanhadas com batata frita e legumes ou salada.',
+        en: 'All meats are served with fries and vegetables or salad',
+        fr: 'Toutes les viandes sont servies avec des frites et des légumes ou une salade.'
     },
     tipsOfDay: {
         pt: 'Sugestões do dia',

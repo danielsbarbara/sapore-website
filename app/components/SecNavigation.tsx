@@ -14,8 +14,8 @@ const SecNavigation: React.FC = () => {
                         <Texts text="secNavigationSugestions" />
                     </div>
                 </Link>
-                <Link href={'/menu/all-menus'}>
-                    <div className={`p-2 rounded-xl ${pathName === '/menu/all-menus' ? 'bg-orange-300' : ''}`}>
+                <Link href={'/menu/all-menus/entries'}>
+                    <div className={`p-2 rounded-xl ${/\/menu\/all-menus/.test(pathName)  ? 'bg-orange-300' : ''}`}>
                         <Texts text="secNavigationMenu" />
                     </div>
                 </Link>

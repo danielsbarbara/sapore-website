@@ -34,7 +34,8 @@ export const Cards: React.FC = () => {
                   className="p-3 self-end md:self-center"
                   alt="sapore logo" />
                 <Link href={`/${image.label === 'menu' ?
-                  `${image.label}/tip-of-day` :
+                  `${image.label}/tip-of-day` : 
+                  image.label === 'desserts' ? `${image.label}/sweets` :
                   image.label}`}
                   className="text-white self-end flex justify-center py-2 px-4 md:p-5 md:self-center">
                   <Texts text={image.label} styles="text-white self-end bg-orange-400 rounded-lg px-4 md:px-5 md:py-2" />
