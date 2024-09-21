@@ -298,6 +298,10 @@ export const translations: any = {
         pt: 'Estamos situados no centro de Lisboa, perto do Marquês de Pombal, e junto ao Parque Eduardo VII o Restaurante Sapore, proporciona aos nossos clientes um ambiente descontraído, ao sabor da excelente cozinha tradicional Italiana.',
         en: 'Located in the center of Lisbon, close to Marquês de Pombal, and next to Parque Eduardo VII, Sapore Restaurant offers our customers a relaxed atmosphere with excellent traditional Italian cuisine.',
         fr: 'Situé dans le centre de Lisbonne, à proximité du Marquês de Pombal et du parc Eduardo VII, le restaurant Sapore offre à ses clients une atmosphère détendue et une excellente cuisine italienne traditionnelle.'
+    },
+    loadingText: {
+        pt: 'A carregar a ementa...',
+        en: 'Loading the menu...',
+        fr: 'Chargement du menu...'
     }
-
 }
