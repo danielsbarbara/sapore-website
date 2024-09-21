@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { LanguageProvider } from "./components/LanguageContext";
+import {Inter} from "next/font/google"
 import { Footer } from "./components/Footer";
+
+ const interFont  = Inter({
+  subsets: ['latin'],
+  display: "swap"
+ })
 
 
 export const metadata = {
@@ -16,12 +22,13 @@ export const metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col relative">
+      <body className={`min-h-screen flex flex-col relative ${interFont.className}`}>
         <LanguageProvider>
           <Header />
-          <main className="max-w-7xl mx-auto w-full">
+          <main>
             {children}
           </main>
+          <Footer/>
         </LanguageProvider>
       </body>
     </html>

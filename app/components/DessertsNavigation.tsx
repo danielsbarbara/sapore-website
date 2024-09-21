@@ -6,12 +6,12 @@ import { Texts } from "./Texts"
 export const DessertsNavigation: React.FC = () => {
     const pathName = usePathname()
     return (
-        <div>
+        <div className="flex justify-center gap-4 p-4">
             <Link href={'/desserts/sweets'}>
-                <Texts text="dessertsNavigationSweets" styles={`${pathName === '/desserts/sweets' ? 'bg-orange-300' : ''}`}/>
+                <Texts text="dessertsNavigationSweets" styles={`${pathName === '/desserts/sweets' ? 'bg-greenCards' : ''} p-2 rounded-lg`}/>
             </Link>
             <Link href={'/desserts/ice-creams'}>
-                <Texts text="dessertsNavigationIceCream" styles={`${pathName === '/desserts/ice-creams' ? 'bg-orange-300' : ''}`}/>
+                <Texts text="dessertsNavigationIceCream" styles={`${pathName === '/desserts/ice-creams' ? 'bg-greenCards' : ''} p-2 rounded-lg`}/>
             </Link>
         </div>
     )

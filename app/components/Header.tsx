@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
     return (
         <div className="w-full sticky top-0 z-50">
             <div className="flex justify-between items-center h-28 
-            bg-orange-400 px-5 py-2 md:justify-around">
+            bg-layoutColor px-5 py-2 md:justify-around">
                 <div className="relative h-20 w-20">
                     <Link href={'/'}>
                         <Image

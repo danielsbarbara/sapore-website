@@ -11,6 +11,11 @@ const config: Config = {
       backgroundImage: {
         'sapore-room': "url('/Sapore.webp')"
       },
+      colors: {
+        layoutColor: '#6B874F',
+        greenCards: '#AAB588',
+        bGround: '#E6DBC6'
+      }
     },
   },
   plugins: [],

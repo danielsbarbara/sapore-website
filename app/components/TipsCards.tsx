@@ -33,8 +33,8 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
     return (
         <div className="flex flex-col items-center py-4 gap-3 w-full
         max-w-[48rem]">
-            <div className="bg-orange-200 w-full text-center px-2 py-4
-            font-bold text-xl">
+            <div className="bg-greenCards w-full text-center px-2 py-4
+            font-bold text-xl rounded-lg text-white">
                 <p>{day[language as keyof typeof day]}</p>
             </div>
             {menu.map(_menu =>

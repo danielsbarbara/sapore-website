@@ -9,10 +9,10 @@ export const metadata = {
 const page: React.FC = async() => {
     const tips = await getTipDay() as TipCards[]
     return (
-        <div className="flex flex-col items-center py-6">  
+        <div className="flex flex-col items-center py-6 bg-bGround">  
             <Texts text='tipsOfDay'/>
             <Texts text='tipsOfDay1' styles="text-sm"/>
-            {tips.map(tip => <TipsCards tip={tip} key={Math.random()}/>)}
+            {tips.map(tip => <TipsCards tip={JSON.parse(JSON.stringify(tip))} key={Math.random()}/>)}
         </div>
     )
 }

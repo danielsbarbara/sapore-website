@@ -15,11 +15,11 @@ const menus = [
 export const MenuNavigation: React.FC = () => {
     const pathName = usePathname()
     return (
-        <div className="flex justify-center spacing md:gap-7">
+        <div className="flex justify-center spacing md:gap-7 bg-bGround">
             {menus.map(menu =>
                 <Link key={Math.random()}
                     href={menu.path}
-                    className={`${pathName === menu.path && 'bg-orange-300'} text-center p-1 rounded-lg`}>
+                    className={`${pathName === menu.path && 'bg-greenCards'} text-center p-1 rounded-lg`}>
                     {menu.text}
                 </Link>
             )}

@@ -32,11 +32,11 @@ export const EntriesMenu: React.FC<EntriesMenuProps> = ({ entries }) => {
     return (
         <div className={`flex flex-col items-center py-4 gap-3 w-full
         max-w-[48rem] ${entries.pt.food[0].imageUrl && 'gap-2 border-none'}`}>
-            <p className="bg-orange-200 w-full text-center px-2 py-4 font-bold text-xl">
+            <p className="bg-greenCards w-full text-white text-center px-2 py-4 font-bold text-xl rounded-lg">
             {entries[language as keyof Omit<EntriesMenuType, '_id'>].name}
             </p>
             {entries[language as keyof Omit<EntriesMenuType, '_id'>].food.map((item, i: number) =>
-                <div className={`flex flex-col w-full ${entries.pt.food[0].imageUrl && 'border-b-orange-200 border-b-2 gap-2'}`} key={i}>
+                <div className={`flex flex-col w-full ${entries.pt.food[0].imageUrl && 'border-b-greenCards border-b-2 gap-2'}`} key={i}>
                     <div className="flex justify-between items-center px-4">
                         <p className="font-bold text-lg">{item.name}</p>
                         <p>{item.price}€</p>

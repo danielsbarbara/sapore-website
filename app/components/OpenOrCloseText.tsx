@@ -15,8 +15,8 @@ export const OpenOrCloseText: React.FC = () => {
     }
 
     return (
-        <p className="text-orange-200 text-center 
-                    font-bold self-end bg-orange-400">
+        <p className="text-white text-center 
+                    font-bold self-end bg-layoutColor">
             {status}
         </p>
     )

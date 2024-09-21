@@ -5,9 +5,9 @@ import { getMenu } from "@/app/server/mongoCRUD"
 const page: React.FC = async() => {
     const fishMenu = await getMenu('fish') as EntriesMenuType[]
     return (
-        <div className="flex flex-col items-center py-6">
+        <div className="flex flex-col items-center py-6 bg-bGround">
             <Texts text="fishIntro" styles="max-w-80 text-center"/>
-            {fishMenu.map(fish => <EntriesMenu entries={fish} key={fish._id.toString()}/>)}
+            {fishMenu.map(fish => <EntriesMenu entries={JSON.parse(JSON.stringify(fish))} key={fish._id.toString()}/>)}
         </div>
     )
 }

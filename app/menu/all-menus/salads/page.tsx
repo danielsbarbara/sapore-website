@@ -6,10 +6,10 @@ const page: React.FC = async() => {
     const salads = await getMenu('salads') as EntriesMenuType[]
     console.log(salads)
 return (
-        <div className="flex flex-col items-center py-6">
+        <div className="flex flex-col items-center py-6 bg-bGround">
             <Texts text="saladsIntro"/> 
             {salads.map(salad =>
-                <EntriesMenu entries={salad} key={salad._id.toString()}/>
+                <EntriesMenu entries={JSON.parse(JSON.stringify(salad))} key={salad._id.toString()}/>
             )}
         </div>
     )

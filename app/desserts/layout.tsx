@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { DessertsNavigation } from "../components/DessertsNavigation"
+import { TopNavigation } from "../components/TopNavigation"
 
 interface LayoutProps {
     children: React.ReactNode
@@ -7,7 +8,8 @@ interface LayoutProps {
 
 const layout: React.FC<LayoutProps> = ({children}) => {
     return (
-        <div>
+        <div className="bg-bGround">
+            <TopNavigation/>
             <DessertsNavigation />
             {children}
         </div>

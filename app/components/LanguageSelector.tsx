@@ -14,7 +14,7 @@ export const LanguageSelector: React.FC = () => {
 
     return (
         <select
-            className="h-8 bg-orange-700 rounded-lg text-orange-200"
+            className="h-8 bg-bGround rounded-lg"
             value={language}
             onChange={handleChange}>
             {options.map((option: any) => <option key={Math.random()}

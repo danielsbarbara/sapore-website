@@ -15,7 +15,7 @@ const images = [
 
 export const Cards: React.FC = () => {
   return (
-    <div className="py-5 bg-orange-300">
+    <div className="py-5 bg-bGround">
       {images.map((image, i: number) =>
         i % 2 == 0 ?
           <div className="w-full h-48 relative md:h-80" key={i}>
@@ -38,7 +38,7 @@ export const Cards: React.FC = () => {
                   image.label === 'desserts' ? `${image.label}/sweets` :
                   image.label}`}
                   className="text-white self-end flex justify-center py-2 px-4 md:p-5 md:self-center">
-                  <Texts text={image.label} styles="text-white self-end bg-orange-400 rounded-lg px-4 md:px-5 md:py-2" />
+                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg px-4 md:px-5 md:py-2" />
                 </Link>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const Cards: React.FC = () => {
                   `${image.label}/tip-of-day` :
                   image.label}`}
                   className="text-white self-start flex py-2 px-4 md:p-5 md:self-center">
-                  <Texts text={image.label} styles="text-white self-end bg-orange-400 rounded-lg p-1 md:px-5 md:py-2" />
+                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg p-1 md:px-5 md:py-2" />
                 </Link>
               </div>
               <Texts text={image.description} styles="text-white text-right max-w-64 justify-self-end text-sm self-center px-2 md:text-xl md:justify-self-center" />
