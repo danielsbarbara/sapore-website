@@ -31,7 +31,7 @@ export const EntriesMenu: React.FC<EntriesMenuProps> = ({ entries }) => {
     const { language } = useLanguage()
     return (
         <div className={`flex flex-col items-center py-4 gap-3 w-full
-        max-w-[48rem] ${entries.pt.food[0].imageUrl && 'gap-2 border-none'}`}>
+        max-w-[30rem] ${entries.pt.food[0].imageUrl && 'gap-2 border-none'}`}>
             <p className="bg-greenCards w-full text-white text-center px-2 py-4 font-bold text-xl rounded-lg">
             {entries[language as keyof Omit<EntriesMenuType, '_id'>].name}
             </p>
@@ -53,7 +53,7 @@ export const EntriesMenu: React.FC<EntriesMenuProps> = ({ entries }) => {
                             </div>}
                         {item.description &&
                             <div className="flex flex-col text-left self-center w-full
-                            max-w-32 md:max-w-80">
+                            max-w-32 md:max-w-60">
                                 {item.description}
                             </div>}
                     </div>

@@ -8,7 +8,7 @@ export const TopNavigation: React.FC = () => {
     const pathName = usePathname()
 
     return (
-        <div className="flex justify-around p-2 gap-3 bg-bGround">
+        <div className="flex flex-wrap justify-around p-2 gap-3 bg-bGround">
             <Link href={'/'}>
                 <Texts text="topNavigationHomePage" />
             </Link>

@@ -21,10 +21,10 @@ Bellow carousel, will have 5 cards.
 On click in this card will take you to the menu page.
 
 ### Dessert Card:
-On click on this card, will take you to he dessert page.
+On click this card, will take you to the dessert page.
 
 ### Wine Card:
-On click on this card, will take you to the wine page.
+On click this card, will take you to the wine page.
 
 ### Drinks Card:
 On this card, will take you to the drinks page.

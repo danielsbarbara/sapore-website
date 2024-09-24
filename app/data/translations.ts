@@ -139,6 +139,51 @@ export const translations: any = {
         en: 'Entries 🥖',
         fr: 'Entrées 🥖'
     },
+    imageEntries: {
+        pt: 'Entradas',
+        en: 'Entries',
+        fr: 'Entrées'
+    },
+    imageSalads: {
+        pt: 'Saladas',
+        en: 'Salads',
+        fr: 'Salades'
+    },
+    imagePastas: {
+        pt: 'Massas',
+        en: 'Pastas',
+        fr: 'Pastas'
+    },
+    imagePizzas: {
+        pt: 'Pizzas',
+        en: 'Pizzas',
+        fr: 'Pizza'
+    },
+    imageFish: {
+        pt: 'Peixe',
+        en: 'Fish',
+        fr: 'Poisson'
+    },
+    imageMeat: {
+        pt: 'Carne',
+        en: 'Meat',
+        fr: 'Viande'
+    },
+    imageDesserts: {
+        pt: 'Sobremesas',
+        en: 'Desserts',
+        fr: 'Desserts'
+    },
+    imageWines: {
+        pt: 'Vinhos',
+        en: 'Wines',
+        fr: 'Vins'
+    },
+    imageDrinks: {
+        pt: 'Bebidas',
+        en: 'Drinks',
+        fr: 'Boissons'
+    },
     menuNavigationPasta: {
         pt: 'Massas 🍝',
         en: 'Pastas 🍝',

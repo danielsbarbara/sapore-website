@@ -31,15 +31,15 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
     const { language } = useLanguage()
     const { day, menu } = tip
     return (
-        <div className="flex flex-col items-center py-4 gap-3 w-full
-        max-w-[48rem]">
+        <div className="flex flex-col flex-wrap items-center py-4 gap-3 w-full
+        max-w-[30rem]">
             <div className="bg-greenCards w-full text-center px-2 py-4
             font-bold text-xl rounded-lg text-white">
                 <p>{day[language as keyof typeof day]}</p>
             </div>
             {menu.map(_menu =>
                 <div className="flex flex-col gap-2 w-full border-b-2 
-                border-orange-200 p-2 max-w-xl">
+                border-orange-200 p-2">
                     <div className="flex justify-between w-full">
                         <p className="font-bold">{_menu.name}</p>
                         <span>{_menu.price}€</span>

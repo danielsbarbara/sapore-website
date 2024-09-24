@@ -1,3 +1,7 @@
+export const metadata = {
+    title: 'Menu'
+}
+
 const page: React.FC = () => {
     return (
         <div className="flex justify-between px-1">
