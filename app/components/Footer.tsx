@@ -2,7 +2,8 @@ import { Texts } from "./Texts"
 
 export const Footer: React.FC = () => {
     return (
-        <div className="bg-layoutColor text-white flex flex-col items-center gap-8 md:flex-row md:justify-around">
+        <div className="bg-layoutColor text-white flex flex-col 
+        items-center gap-8 md:flex-row md:justify-around">
             <div>
                 <Texts text="footer1" styles="text-xl font-bold py-3" />
                 <div className="px-5">

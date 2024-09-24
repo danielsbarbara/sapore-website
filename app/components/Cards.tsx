@@ -15,16 +15,16 @@ const images = [
 
 export const Cards: React.FC = () => {
   return (
-    <div className="py-5 bg-bGround">
+    <div className="flex flex-wrap justify-center gap-10 py-1">
       {images.map((image, i: number) =>
         i % 2 == 0 ?
-          <div className="w-full h-48 relative md:h-80" key={i}>
+          <div className="w-[20rem] md:w-[35rem] h-48 relative md:h-80" key={i}>
             <Image
               fill
-              className="object-cover"
+              className="object-cover rounded-lg"
               src={image.img}
               alt={`${image.label} image`} />
-            <div className="absolute w-full h-full bg-gradient-to-r from-black grid grid-cols-2">
+            <div className="rounded-lg absolute w-full h-full bg-gradient-to-r from-black grid grid-cols-2">
               <Texts text={image.description} styles="text-white text-sm max-w-64 self-center px-2 md:text-xl md:justify-self-center" />
               <div className="flex flex-col justify-between">
                 <Image
@@ -43,13 +43,13 @@ export const Cards: React.FC = () => {
               </div>
             </div>
           </div> :
-          <div className="w-full h-48 relative md:h-80" key={i}>
+          <div className="w-[20rem] md:w-[35rem] justify-self-end h-48 relative md:h-80 rounded-lg" key={i}>
             <Image
               fill
-              className="object-cover"
+              className="object-cover rounded-lg"
               src={image.img}
               alt={`${image.label} image`} />
-            <div className="absolute w-full h-full bg-gradient-to-l from-black grid grid-cols-2">
+            <div className="rounded-lg absolute w-full h-full bg-gradient-to-l from-black grid grid-cols-2">
               <div className="flex flex-col justify-between">
                 <Image
                   src="/Sapore Logo.webp"

@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen flex flex-col relative ${interFont.className}`}>
+      <body className={`${interFont.className}`}>
         <LanguageProvider>
           <Header />
           <main>
