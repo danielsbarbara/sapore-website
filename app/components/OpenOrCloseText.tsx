@@ -9,6 +9,7 @@ export const OpenOrCloseText: React.FC = () => {
     let status: string
     if (date !== 7) {
         const hours: number = new Date().getHours()
+        const minutes: number = new Date().getMinutes()
         status = (hours >= 12 && hours <= 15) ? getTranslation('openStatusForLunch', language) : (hours >= 19 && hours <= 23) ? getTranslation('openStatusForDinner', language) : getTranslation('closedStatus', language)
     } else {
         status = getTranslation('closedStatus', language)

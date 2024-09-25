@@ -58,7 +58,8 @@ export const BurguerMenu: React.FC = () => {
                 className="bg-layoutColor text-white outline-none">
                     {dropDownMenu.map((item, i: number) => i <= 4 &&
                         <option className="text-black"
-                            value={item.value}>
+                            value={item.value}
+                            key={i}>
                             {item.description}
                         </option>
                     )}
