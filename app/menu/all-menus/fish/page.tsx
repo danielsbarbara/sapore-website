@@ -1,4 +1,4 @@
-import { EntriesMenu, EntriesMenuType } from "@/app/components/EntriesMenu"
+import { EntriesMenuType } from "@/app/components/EntriesMenu"
 import { MenuNavigation } from "@/app/components/MenuNavigation"
 import { PageImage } from "@/app/components/PageImage"
 import SecNavigation from "@/app/components/SecNavigation"

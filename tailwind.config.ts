@@ -19,11 +19,29 @@ const config: Config = {
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
-          '100%': {opacity: '1'}
+          '100%': { opacity: '1' }
+        },
+        menuOpenTop: {
+          '0%': { rotate: '0deg' },
+          '100%': { rotate: '45deg' }
+        },
+        menuOpenDown: {
+          '0%': { rotate: '0deg' },
+          '100%': {
+            rotate: '-45deg',
+            transform: 'translate(7px, -6px)'
+          }
+        },
+        menuClose: {
+          '0%': { rotate: '45deg' },
+          '100%': { rotate: '0deg' }
         }
       },
       animation: {
-        fadeIn: 'fadeIn 0.3s ease-in-out'
+        fadeIn: 'fadeIn 0.3s ease-in-out',
+        menuAnimeInTop: 'menuOpenTop 0.3s forwards',
+        menuAnimeInDown: 'menuOpenDown 0.3s forwards',
+        menuAnimeOut: 'menuClose 0.3s ease-in-out'
       }
     },
   },

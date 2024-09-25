@@ -4,7 +4,6 @@ import SecNavigation from "@/app/components/SecNavigation"
 import { Texts } from "@/app/components/Texts"
 import { TipCards, TipsCards } from "@/app/components/TipsCards"
 import { getTipDay } from "@/app/server/mongoCRUD"
-import Image from "next/image"
 
 export const metadata = {
     title: 'Tips Of the Day'

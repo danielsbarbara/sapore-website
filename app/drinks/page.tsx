@@ -1,6 +1,5 @@
 import { EntriesMenu, EntriesMenuType } from "../components/EntriesMenu"
 import { PageImage } from "../components/PageImage"
-import { TopNavigation } from "../components/TopNavigation"
 import { getMenu } from "../server/mongoCRUD"
 
 export const metadata = {

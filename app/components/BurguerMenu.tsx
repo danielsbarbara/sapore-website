@@ -1,11 +1,10 @@
 "use client"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
-import { RxHamburgerMenu } from "react-icons/rx"
-import { Texts } from "./Texts"
 import { getTranslation } from "../_lib/getTranslation"
 import { useLanguage } from "./LanguageContext"
-import { usePathname, useRouter } from "next/navigation"
+import { Texts } from "./Texts"
 
 interface PathsType {
     href: string,
@@ -37,8 +36,10 @@ export const BurguerMenu: React.FC = () => {
     return (
         <>
             <div className="flex flex-col relative md:hidden">
-                <div className="hover:bg-bGround hover:rounded-lg" onClick={() => setIsOpen(() => !isOpen)}>
-                    <RxHamburgerMenu size="2rem" color="white" />
+                <div className="flex flex-col gap-2" onClick={() => setIsOpen(() => !isOpen)}>
+                    <div className={`${isOpen && 'animate-menuAnimeInTop'} w-8 h-[2px] bg-white`} />
+                    <div className={`${isOpen ? 'hidden' : 'block'} w-8 h-[2px] bg-white`} />
+                    <div className={`${isOpen && 'animate-menuAnimeInDown'} w-8 h-[2px] bg-white 1s`} />
                 </div>
                 {isOpen &&
                     <div className="flex flex-col gap-2 bg-gray-200 w-48 absolute 
@@ -54,9 +55,9 @@ export const BurguerMenu: React.FC = () => {
                     </div>}
             </div>
             <div className="hidden md:flex gap-5 font-thin">
-                <select value={selectValue} onChange={handleChange} 
-                className="bg-layoutColor text-white outline-none">
-                    {dropDownMenu.map((item, i: number) => i <= 4 &&
+                <select value={selectValue} onChange={handleChange}
+                    className="bg-layoutColor text-white outline-none">
+                    {dropDownMenu.map((item, i: number) =>
                         <option className="text-black"
                             value={item.value}
                             key={i}>
@@ -77,19 +78,4 @@ export const BurguerMenu: React.FC = () => {
     )
 }
 
-{/* <div className="hover:bg-bGround hover:rounded-lg md:hidden" onClick={() => setIsOpen(() => !isOpen)}>
-                <RxHamburgerMenu size="2rem" color="white" />
-            </div>
-            {isOpen &&
-                <div className="flex flex-col gap-2 bg-gray-200 w-48 absolute 
-                translate-y-9 p-2 uppercase animate-fadeIn">
-                    {paths.map((item, i: number) =>
-                        <Link 
-                            className={`${i === 5 && 'border-t-[1px] border-black'} py-1`}
-                            href={item.href} 
-                            onClick={() => setIsOpen(() => !isOpen)} 
-                            key={i}>
-                            <Texts text={item.text} />
-                        </Link>)}
-                </div>
-            } */}
+

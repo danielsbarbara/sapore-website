@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { LanguageProvider } from "./components/LanguageContext";
-import {Inter} from "next/font/google"
-import { Footer } from "./components/Footer";
+import "./globals.css";
 
  const interFont  = Inter({
   subsets: ['latin'],
@@ -22,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${interFont.className}`}>
+      <body className={`${interFont.className} `} suppressHydrationWarning={true}>
         <LanguageProvider>
           <Header />
           <main>
