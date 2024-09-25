@@ -3,6 +3,7 @@ import logo from "../../public/Sapore Logo.webp"
 import { LanguageSelector } from "./LanguageSelector"
 import { OpenOrCloseText } from "./OpenOrCloseText"
 import Link from "next/link"
+import { BurguerMenu } from "./BurguerMenu"
 
 export const Header: React.FC = () => {
     return (
@@ -19,6 +20,7 @@ export const Header: React.FC = () => {
                             className="object-cover" />
                     </Link>
                 </div>
+                    <BurguerMenu/>
                 <LanguageSelector />
             </div>
             <OpenOrCloseText />

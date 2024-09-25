@@ -24,8 +24,6 @@ const page: React.FC = () => {
                     <Texts text="aboutUsText3" styles="py-4 px-2 max-w-[60rem]"/>
                     <Texts text="aboutUsText4" styles="py-4 px-2 max-w-[60rem]"/>
                     <Texts text="aboutUsText5" styles="py-4 px-2 max-w-[60rem]"/>
-                    <Texts text="aboutUsLoc" styles="pt-2 font-bold text-xl text-center"/>
-                    <Texts text="aboutUsLocalization" styles="py-4 px-2 max-w-[60rem]" />
                 </div>
             </div>
         </div>

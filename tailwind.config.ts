@@ -15,6 +15,15 @@ const config: Config = {
         layoutColor: '#6B874F',
         greenCards: '#AAB588',
         bGround: '#E6DBC6'
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': {opacity: '1'}
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.3s ease-in-out'
       }
     },
   },

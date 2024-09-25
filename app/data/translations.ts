@@ -29,6 +29,11 @@ export const translations: any = {
         en: [{ value: 'pt', description: '🇵🇹 Portuguese' }, { value: 'en', description: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 English' }, { value: 'fr', description: '🇫🇷 French' }],
         fr: [{ value: 'pt', description: '🇵🇹 Portugais' }, { value: 'en', description: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglais' }, { value: 'fr', description: '🇫🇷 Français' }]
     },
+    selectMenu:{
+        pt: [{value: '/', description: 'Página Principal'}, {value:'/menu/tip-of-day', description: 'Menu'}, {value: '/desserts/sweets', description: 'Sobremesas'}, {value: '/drinks', description: 'Bebidas'}, {value:'/wines', description: 'Vinhos'}],
+        en: [{value: '/', description: 'Home Page'}, {value:'/menu/tip-of-day', description: 'Menu'}, {value: '/desserts/sweets', description: 'Desserts'}, {value: '/drinks', description: 'Drinks'}, {value:'/wines', description: 'Wines'}],
+        fr: [{value: '/', description: 'Page d\'accueil'}, {value:'/menu/tip-of-day', description: 'Menu'}, {value: '/desserts/sweets', description: 'Desserts'}, {value: '/drinks', description: 'Boissons'}, {value:'/wines', description: 'Vins'}]
+    },
     closedStatus: {
         pt: 'Actualmente encerrado',
         en: 'Currently closed',
@@ -78,6 +83,11 @@ export const translations: any = {
         pt: 'Sobre nós',
         en: 'About us',
         fr: 'A propos de nous'
+    },
+    location:{
+        pt: 'Onde estamos',
+        en: 'Where we are',
+        fr: 'Où nous sommes'
     },
     menuDescription:{
         pt: 'Delicie-se com nossas pizzas artesanais e massas frescas, preparadas com o autêntico sabor italiano.',
