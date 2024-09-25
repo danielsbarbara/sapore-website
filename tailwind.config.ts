@@ -25,6 +25,10 @@ const config: Config = {
           '0%': { rotate: '0deg' },
           '100%': { rotate: '45deg' }
         },
+        menuCloseTop: {
+          '0%': { rotate: '45deg' },
+          '100%': { rotate: '0deg' }
+        },
         menuOpenDown: {
           '0%': { rotate: '0deg' },
           '100%': {
@@ -40,6 +44,7 @@ const config: Config = {
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
         menuAnimeInTop: 'menuOpenTop 0.3s forwards',
+        menuAnimeCloseTop: 'menuCloseTop 0.3s forwards',
         menuAnimeInDown: 'menuOpenDown 0.3s forwards',
         menuAnimeOut: 'menuClose 0.3s ease-in-out'
       }
@@ -47,4 +52,6 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
+

@@ -5,6 +5,7 @@ import { useState } from "react"
 import { getTranslation } from "../_lib/getTranslation"
 import { useLanguage } from "./LanguageContext"
 import { Texts } from "./Texts"
+import Hamburger from "hamburger-react"
 
 interface PathsType {
     href: string,
@@ -36,14 +37,15 @@ export const BurguerMenu: React.FC = () => {
     return (
         <>
             <div className="flex flex-col relative md:hidden">
-                <div className="flex flex-col gap-2" onClick={() => setIsOpen(() => !isOpen)}>
-                    <div className={`${isOpen && 'animate-menuAnimeInTop'} w-8 h-[2px] bg-white`} />
+                <Hamburger color="white" toggled={isOpen} toggle={setIsOpen} />
+                {/* <div className="flex flex-col gap-2 transition-all transform duration-500" onClick={() => setIsOpen(() => !isOpen)}>
+                    <div className={`${isOpen ? 'animate-menuAnimeInTop w-8 h-[2px] bg-white' : ''} w-8 h-[2px] bg-white`} />
                     <div className={`${isOpen ? 'hidden' : 'block'} w-8 h-[2px] bg-white`} />
-                    <div className={`${isOpen && 'animate-menuAnimeInDown'} w-8 h-[2px] bg-white 1s`} />
-                </div>
+                    <div className={`${isOpen && 'animate-menuAnimeInDown'} w-8 h-[2px] bg-white`} />
+                </div> */}
                 {isOpen &&
                     <div className="flex flex-col gap-2 bg-gray-200 w-48 absolute 
-                translate-y-9 p-2 uppercase animate-fadeIn">
+                translate-y-11 -translate-x-10 p-2 uppercase animate-fadeIn">
                         {paths.map((item, i: number) =>
                             <Link
                                 className={`${i === 5 && 'border-t-[1px] border-black'} py-1`}
