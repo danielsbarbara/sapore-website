@@ -1,51 +1,35 @@
-name: Deploy Next.js App
+name: Deployment Workflow
 
+# Trigger this workflow on pushes to the specified branch
 on:
   push:
     branches:
-      - main # Change to your specific branch
-      # - deployprod  # Additional branch for deployment
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: SSH Deploy
+        # Use the 'appleboy/ssh-action' action for SSH deployment
+        uses: appleboy/ssh-action@master
         with:
-          node-version: "20"
-
-      - name: Check Node.js version
-        run: node -v
-
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.1
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Deploy to DigitalOcean
-        env:
-          HOST: 192.168.1.180
-          USERNAME: k20
-          TARGET_DIR: /var/www/sapore-website
-          APP_NAME: sapore-website #should match the name of the server block
-          PORT: 3000
-        run: |
-          ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << EOF
-            export PATH=/usr/local/bin/pm2:$PATH #'which pm2' command on terminal will give the right path
-            cd $TARGET_DIR
-            git pull origin ${GITHUB_REF#refs/heads/}
+          host: 192.168.1.180 # Your server's IP address
+          username: k20# Your server's username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
+          script: |
+            cd /path/to/your/application/directory # Specify the path to your app directory on the server
+            git pull
             npm install
             npm run build
-            if pm2 list | grep -q $APP_NAME; then
-              echo "Restarting application: $APP_NAME"
-              pm2 restart $APP_NAME
-            else
-              echo "Starting application: $APP_NAME"
-              pm2 start npm --name $APP_NAME -- start -- --port=$PORT
-            fi            
-            pm2 save
-          EOF
+            pm2 restart your-pm2-sapore-website # Replace with your PM2 service name
