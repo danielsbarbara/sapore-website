@@ -20,7 +20,6 @@ export const Header: React.FC = () => {
                             className="object-cover" />
                     </Link>
                 </div>
-                    <p>Test</p>
                     <BurguerMenu/>
                 <LanguageSelector />
             </div>
