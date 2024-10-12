@@ -26,7 +26,7 @@ jobs:
           host: ${{secrets.HOST}}
           username: ${{secrets.USERNAME}}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 3000
+          port: 24
           script: |
             cd /var/www/sapore-website
             git pull
