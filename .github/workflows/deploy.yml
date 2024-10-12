@@ -29,7 +29,7 @@ jobs:
       - name: Deploy to DigitalOcean
         env:
           HOST: 192.168.1.180
-          USERNAME: root
+          USERNAME: k20
           TARGET_DIR: /var/www/sapore-website
           APP_NAME: sapore-website #should match the name of the server block
           PORT: 3000
