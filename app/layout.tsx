@@ -9,7 +9,6 @@ import "./globals.css";
   display: "swap"
  })
 
-
 export const metadata = {
   title: {
     template: "%s | Sapore",
