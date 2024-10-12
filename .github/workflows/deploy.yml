@@ -31,4 +31,5 @@ jobs:
             git pull
             npm install
             npm run build
-            pm2 restart your-pm2-sapore-website
+            pm2 restart sapore-website
+            pm2 save
