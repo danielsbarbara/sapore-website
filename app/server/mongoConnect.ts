@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb')
 
-const url: string = 'mongodb+srv://danielsantosbarbara:sapore2024@cluster0.5svdx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'//process.env.DB_URL! //'mongodb://localhost:27017/'
+const url: string = 'mongodb://localhost:27017/'
 export const DBname: string = 'sapore'
 
 let client: any = undefined
