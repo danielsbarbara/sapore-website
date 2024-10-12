@@ -37,9 +37,9 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
             font-bold text-xl rounded-lg text-white">
                 <p>{day[language as keyof typeof day]}</p>
             </div>
-            {menu.map(_menu =>
+            {menu.map((_menu, i: number) =>
                 <div className="flex flex-col gap-2 w-full border-b-2 
-                border-orange-200 p-2">
+                border-orange-200 p-2" key={i}>
                     <div className="flex justify-between w-full">
                         <p className="font-bold">{_menu.name}</p>
                         <span>{_menu.price}€</span>

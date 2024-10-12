@@ -19,7 +19,7 @@ const page: React.FC = async () => {
             </div>
             <Texts text='tipsOfDay1' styles="text-sm pt-4 font-bold animate-bounce" />
             <BoxContainer>
-                {tips.map(tip => <TipsCards tip={JSON.parse(JSON.stringify(tip))} key={Math.random()} />)}
+                {tips.map((tip, i: number) => <TipsCards tip={JSON.parse(JSON.stringify(tip))} key={i} />)}
             </BoxContainer>
         </div>
     )
