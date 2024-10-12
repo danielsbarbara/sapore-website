@@ -26,7 +26,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           host: 192.168.1.180 # Your server's IP address
           username: k20 # Your server's username
-          script: |
+          run: |
             cd /var/www/sapore-website
             git pull
             npm install
