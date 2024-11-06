@@ -12,7 +12,7 @@ export const metadata = {
 const page: React.FC = async () => {
     const tips = await getTipDay() as TipCards[]
     return (
-        <div className="flex flex-col items-center pb-6 bg-bGround">
+        <div className="flex flex-col items-center pb-6 bg-bGround max-w-[115rem]">
             <PageImage imgUrl="/menu.jpg" description="secNavigationSugestions" />
             <div className="py-4">
                 <SecNavigation />

@@ -21,8 +21,9 @@ export const PageImage: React.FC<PageImageProps> = ({ imgUrl, description }) => 
                     className="object-cover"
                 />
             </Suspense>
-            <div className="absolute w-full mb-3">
-                <Texts text={description} styles="bg-orange-300/50 p-3 text-center text-white uppercase text-xl font-bold" />
+            <div className="absolute w-full mb-3 transition-all animate-textsFadeRightToLeft2 bg-gradient-to-r from-transparent to-orange-300/70"
+                style={{animationFillMode: 'backwards'}}>
+                <Texts text={description} styles=" p-3 text-center text-white uppercase text-xl font-bold" />
             </div>
         </div>
     )

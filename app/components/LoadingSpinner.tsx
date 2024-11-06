@@ -3,7 +3,7 @@ import { Texts } from "./Texts"
 
 export const LoadingSpinner: React.FC = () => {
     return (
-        <div className="h-screen w-full flex flex-col items-center p-9 bg-bGround">
+        <div className="h-screen w-screen flex flex-col items-center p-9">
             <Image
                 height={100}
                 width={100}

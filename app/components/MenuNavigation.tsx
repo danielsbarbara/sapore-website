@@ -19,7 +19,7 @@ export const MenuNavigation: React.FC = () => {
             {menus.map(menu =>
                 <Link key={Math.random()}
                     href={menu.path}
-                    className={`${pathName === menu.path && 'bg-greenCards'} text-center p-1 rounded-lg`}>
+                    className={`${pathName === menu.path ? 'bg-greenCards shadow-md scale-110 font-semibold' : 'transition-all duration-300 hover:bg-green-700/80 hover:scale-105'} text-center p-1 rounded-lg transition-all duration-300 active:translate-y-1`}>
                     {menu.text}
                 </Link>
             )}

@@ -8,7 +8,7 @@ import { BurguerMenu } from "./BurguerMenu"
 export const Header: React.FC = () => {
     return (
         <div className="w-full sticky top-0 z-50">
-            <div className="flex justify-between items-center h-28 
+            <div className="flex justify-between items-center h-24 
             bg-layoutColor px-5 py-2 md:justify-around">
                 <div className="relative h-20 w-20">
                     <Link href={'/'}>
@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
                             quality={70}
                             src={logo}
                             alt="Logo of the restaurant"
-                            className="object-cover" />
+                            className="object-cover transition-all animate-spinLogo" />
                     </Link>
                 </div>
                     <BurguerMenu/>

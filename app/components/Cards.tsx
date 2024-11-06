@@ -37,8 +37,8 @@ export const Cards: React.FC = () => {
                   `${image.label}/tip-of-day` : 
                   image.label === 'desserts' ? `${image.label}/sweets` :
                   image.label}`}
-                  className="text-white self-end flex justify-center py-2 px-4 md:p-5 md:self-center">
-                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg px-4 md:px-5 md:py-2" />
+                  className="text-white self-end flex justify-center py-2 px-4 md:p-5 md:self-center transition-all hover:-translate-y-1 hover:scale-105 hover:shadow-xl active:translate-y-[0.5px]">
+                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg px-4 md:px-5 md:py-2 transition-all duration-300 hover:bg-bGround hover:text-slate-700" />
                 </Link>
               </div>
             </div>
@@ -60,8 +60,8 @@ export const Cards: React.FC = () => {
                 <Link href={`/${image.label === 'menu' ?
                   `${image.label}/tip-of-day` :
                   image.label}`}
-                  className="text-white self-start flex py-2 px-4 md:p-5 md:self-center">
-                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg p-1 md:px-5 md:py-2" />
+                  className="text-white self-start flex py-2 px-4 md:p-5 md:self-center transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl active:translate-y-[0.5px]">
+                  <Texts text={image.label} styles="text-white self-end bg-greenCards rounded-lg p-1 md:px-5 md:py-2 transition-all duration-300 hover:bg-bGround hover:text-slate-700" />
                 </Link>
               </div>
               <Texts text={image.description} styles="text-white text-right max-w-64 justify-self-end text-sm self-center px-2 md:text-xl md:justify-self-center" />

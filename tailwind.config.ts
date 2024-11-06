@@ -39,9 +39,23 @@ const config: Config = {
         menuClose: {
           '0%': { rotate: '45deg' },
           '100%': { rotate: '0deg' }
+        },
+        spinLogo: {
+          '0%': {rotate: '0deg'},
+          '50%': {rotate: '0deg'},
+          '70%': {rotate: '-20deg'},
+          '100%':{rotate: '360deg'}
+        },
+        textsFadeRightToLeft: {
+          '0%': {opacity: '0', transform: 'translateX(20rem)'},
+          '100%': {opacity: '1', transform: 'translateX(0)'}
         }
       },
       animation: {
+        textsFadeRightToLeft1: 'textsFadeRightToLeft 1.5s ease-in-out',
+        textsFadeRightToLeft2: 'textsFadeRightToLeft 1.5s ease-in-out .75s',
+        textsFadeRightToLeft3: 'textsFadeRightToLeft 1.5s ease-in-out 1s',
+        spinLogo: 'spinLogo 8.5s infinite',
         fadeIn: 'fadeIn 0.3s ease-in-out',
         menuAnimeInTop: 'menuOpenTop 0.3s forwards',
         menuAnimeCloseTop: 'menuCloseTop 0.3s forwards',
