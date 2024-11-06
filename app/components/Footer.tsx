@@ -26,7 +26,9 @@ export const Footer: React.FC = () => {
                     <p>Av. Sidónio Pais, nº2 - B 1050-214 - Lisboa</p>
                 </div>
             </div>
-            <Texts text="footer2" styles="py-3 font-bold text-sm text-white justify-self-center" />
+            <div className="w-full flex justify-center">
+                <Texts text="footer2" styles="py-3 font-bold text-sm text-white" />
+            </div>
         </div>
     )
 }
