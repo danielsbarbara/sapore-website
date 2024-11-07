@@ -12,7 +12,7 @@ export const metadata = {
 const page: React.FC = async() => {
     const pastas = await getMenu('pastas') as EntriesMenuType[]
     return (
-        <div className="flex flex-col items-center pb-6 bg-bGround">
+        <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem]">
             <PageImage imgUrl="/pasta.jpg" description="imagePastas"/>
             <div className="flex flex-col gap-4 py-4">
                 <SecNavigation />
