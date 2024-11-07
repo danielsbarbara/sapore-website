@@ -12,6 +12,7 @@ export const PageImage: React.FC<PageImageProps> = ({ imgUrl, description }) => 
         <div className="relative h-60 w-full md:h-96 flex flex-col justify-end items-center">
             <Suspense>
                 <Image
+                    priority
                     placeholder="blur"
                     blurDataURL={imgUrl}
                     quality={40}
