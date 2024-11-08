@@ -11,7 +11,7 @@ const page: React.FC = async () => {
     const sweetsMenu = await getMenu('sweets') as EntriesMenuType[]
     return (
         <>
-            <div className="flex flex-col items-center py-6">
+            <div className="flex flex-col items-center py-6 max-w-[90rem]">
                 {sweetsMenu.map(sweet => <SingleType entries={JSON.parse(JSON.stringify(sweet))} key={sweet._id.toString()} />)}
             </div>
         </>

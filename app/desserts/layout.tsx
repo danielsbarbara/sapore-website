@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const layout: React.FC<LayoutProps> = ({children}) => {
     return (
-        <div className="bg-bGround max-w-[115rem]">
+        <div className="bg-bGround flex flex-col items-center max-w-[90rem]">
             <PageImage imgUrl="/dessertsLanding.jpg" description="imageDesserts"/>
             <DessertsNavigation />
             {children}

@@ -3,7 +3,7 @@ import { Texts } from "../components/Texts"
 
 const page: React.FC = () => {
     return (
-        <div>
+        <div className="max-w-[90rem] lg:min-w-[90rem]">
             <div className="relative h-[20rem] md:h-[45rem]">
                 <Image
                     src={'/about-us.jpg'}
