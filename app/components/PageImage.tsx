@@ -9,7 +9,7 @@ interface PageImageProps {
 
 export const PageImage: React.FC<PageImageProps> = ({ imgUrl, description }) => {
     return (
-        <div className="relative h-60 w-full md:h-96 flex flex-col justify-end items-center">
+        <div className="relative h-60 w-full md:h-96 flex flex-col justify-end items-center overflow-hidden">
             <Suspense>
                 <Image
                     priority={true}
