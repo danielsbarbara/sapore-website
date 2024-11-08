@@ -54,7 +54,7 @@ const config: Config = {
       animation: {
         textsFadeRightToLeft1: 'textsFadeRightToLeft 1.5s ease-in-out',
         textsFadeRightToLeft2: 'textsFadeRightToLeft 1.5s ease-in-out .75s',
-        textsFadeRightToLeft3: 'textsFadeRightToLeft 1.5s ease-in-out 1s',
+        textsFadeRightToLeft3: 'textsFadeRightToLeft 1.5s ease-in-out 1.4s',
         spinLogo: 'spinLogo 8.5s infinite',
         fadeIn: 'fadeIn 0.3s ease-in-out',
         menuAnimeInTop: 'menuOpenTop 0.3s forwards',

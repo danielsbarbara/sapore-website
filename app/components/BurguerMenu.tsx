@@ -38,11 +38,6 @@ export const BurguerMenu: React.FC = () => {
         <>
             <div className="flex flex-col relative md:hidden">
                 <Hamburger color="white" toggled={isOpen} toggle={setIsOpen} />
-                {/* <div className="flex flex-col gap-2 transition-all transform duration-500" onClick={() => setIsOpen(() => !isOpen)}>
-                    <div className={`${isOpen ? 'animate-menuAnimeInTop w-8 h-[2px] bg-white' : ''} w-8 h-[2px] bg-white`} />
-                    <div className={`${isOpen ? 'hidden' : 'block'} w-8 h-[2px] bg-white`} />
-                    <div className={`${isOpen && 'animate-menuAnimeInDown'} w-8 h-[2px] bg-white`} />
-                </div> */}
                 {isOpen &&
                     <div className="flex flex-col gap-2 bg-gray-200 w-48 absolute 
                 translate-y-11 -translate-x-10 p-2 uppercase animate-fadeIn">
@@ -58,7 +53,7 @@ export const BurguerMenu: React.FC = () => {
             </div>
             <div className="hidden md:flex gap-5 font-thin">
                 <select value={selectValue} onChange={handleChange}
-                    className="bg-layoutColor text-white outline-none">
+                    className="bg-layoutColor text-white outline-none font-semibold text-lg">
                     {dropDownMenu.map((item, i: number) =>
                         <option className="text-black"
                             value={item.value}
