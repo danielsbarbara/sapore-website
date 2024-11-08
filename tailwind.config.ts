@@ -47,7 +47,7 @@ const config: Config = {
           '100%':{rotate: '360deg'}
         },
         textsFadeRightToLeft: {
-          '0%': {opacity: '0', transform: 'translateX(20rem)'},
+          '0%': {opacity: '0', transform: 'translateX(10rem)'},
           '100%': {opacity: '1', transform: 'translateX(0)'}
         }
       },

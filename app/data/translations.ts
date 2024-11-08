@@ -235,7 +235,7 @@ export const translations: any = {
         fr: 'Toutes les salades sont assaisonnées'
     },
     pizzasIntro: {
-        pt: 'Todas as pizzas têm molho de tomate molho de tomate e queijo mozarella.',
+        pt: 'Todas as pizzas têm molho de tomate e queijo mozarella.',
         en: 'All pizzas have tomato sauce and mozzarella cheese.',
         fr: 'Toutes les pizzas contiennent de la sauce tomate et de la mozzarella.'
     },

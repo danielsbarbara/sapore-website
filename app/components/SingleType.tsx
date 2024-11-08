@@ -15,9 +15,9 @@ export const SingleType: React.FC<SingleTypeProps> = ({entries}) => {
                 {entries[language as keyof Omit<EntriesMenuType, '_id'>].name}
                 </p>
                 {entries[language as keyof Omit<EntriesMenuType, '_id'>].food.map((item, i: number) =>
-                    <div className={`flex flex-col md:w-[29rem] ${entries.pt.food[0].imageUrl && 'border-b-greenCards border-b-2 gap-2'}`} key={i}>
+                    <div className={`flex flex-col w-[95%] md:w-[29rem] ${entries.pt.food[0].imageUrl && 'border-b-greenCards border-b-2 gap-2'}`} key={i}>
                         <div className="flex justify-between items-center px-4">
-                            <p className="font-bold text-lg max-w-[17rem]">{item.name}</p>
+                            <p className="font-bold text-lg w-[15rem] md:w-[50rem]">{item.name}</p>
                             <p>{item.price}€</p>
                         </div>
                         <div className={`flex w-full px-3 gap-4 ${entries.pt.food[0].imageUrl && 'pb-4'}`}>

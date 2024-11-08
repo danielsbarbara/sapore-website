@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${interFont.className} flex flex-col items-center bg-greenCards w-screen`} suppressHydrationWarning={true}>
+      <body className={`${interFont.className} flex flex-col items-center bg-greenCards w-dvw`} suppressHydrationWarning={true}>
         <LanguageProvider>
           <Header />
           <main>
