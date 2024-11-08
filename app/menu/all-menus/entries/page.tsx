@@ -13,7 +13,7 @@ const page: React.FC = async () => {
     const entriesMenu = await getMenu('entries') as EntriesMenuType[]
 
     return (
-        <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem] lg:w-[90rem]">
+        <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem] ">
             <PageImage imgUrl="/entries.jpg" description="imageEntries" />
             <div className="flex flex-col gap-4 pt-4">
                 <SecNavigation />
