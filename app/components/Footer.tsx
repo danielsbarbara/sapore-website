@@ -29,6 +29,13 @@ export const Footer: React.FC = () => {
             <div className="w-full flex justify-center">
                 <Texts text="footer2" styles="py-3 font-bold text-sm text-white" />
             </div>
+            <div className="flex justify-between text-white p-5 text-[0.7rem]">
+                <p>This is for testing only, not for comercial use</p>
+                <div>
+                    <i className="font-thin block">Design by @Bianca</i>
+                    <i className="font-thin">Developed by @Daniel</i>
+                </div>
+            </div>
         </div>
     )
 }
