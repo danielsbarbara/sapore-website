@@ -3,6 +3,7 @@ import { ObjectId } from "mongodb"
 import { useLanguage } from "./LanguageContext"
 import Image from "next/image"
 import { Texts } from "./Texts"
+import { MenuSchema, TheMenuType, TipsOfDayType } from "../_lib/types"
 
 export interface TipCards {
     _id: ObjectId,
@@ -24,7 +25,7 @@ export interface TipCards {
 }
 
 interface TipsCardsProps {
-    tip: TipCards
+    tip: TipsOfDayType
 }
 
 export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
@@ -37,11 +38,11 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
             font-bold text-xl rounded-lg text-white">
                 <p>{day[language as keyof typeof day]}</p>
             </div>
-            {menu.map((_menu, i: number) =>
+            {(menu as MenuSchema[]).map((_menu, i: number) =>
                 <div className="flex flex-col gap-2 w-full border-b-2 
                 border-orange-200 p-2" key={i}>
                     <div className="flex justify-between w-full">
-                        <p className="font-bold">{_menu.name}</p>
+                        <p className="font-bold">{(_menu[language as keyof typeof _menu] as {name: string}).name}</p>
                         <span>{_menu.price}€</span>
                     </div>
                     <div className="flex justify-between items-center w-full px-2">
@@ -50,11 +51,11 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
                                 fill
                                 className="object-cover rounded-lg"
                                 src={_menu.imageUrl}
-                                alt={`${_menu.name} image`} />
+                                alt={`${(_menu[language as keyof typeof _menu] as {name: string}).name} image`} />
                         </div>
                         <div>
                             <Texts text="tipsOfDayIngredients" styles="font-bold" />
-                            <p className="w-48">{_menu.ingredients[language as keyof typeof _menu.ingredients]}</p>
+                            <p className="w-48">{(_menu[language as keyof typeof _menu] as {description: string}).description}</p>
                         </div>
                     </div>
                 </div>

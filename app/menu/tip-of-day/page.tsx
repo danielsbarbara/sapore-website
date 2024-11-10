@@ -1,3 +1,4 @@
+import { TipsOfDayType } from "@/app/_lib/types"
 import { BoxContainer } from "@/app/components/BoxContainer"
 import { PageImage } from "@/app/components/PageImage"
 import SecNavigation from "@/app/components/SecNavigation"
@@ -10,7 +11,7 @@ export const metadata = {
 }
 
 const page: React.FC = async () => {
-    const tips = await getTipDay() as TipCards[]
+    const tips = await getTipDay() as TipsOfDayType[]
     return (
         <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem]">
             <PageImage imgUrl="/menu.jpg" description="secNavigationSugestions" />

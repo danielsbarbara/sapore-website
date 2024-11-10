@@ -1,3 +1,4 @@
+import { MenuType4All } from "@/app/_lib/types"
 import { BoxContainer } from "@/app/components/BoxContainer"
 import { EntriesMenu, EntriesMenuType } from "@/app/components/EntriesMenu"
 import { MenuNavigation } from "@/app/components/MenuNavigation"
@@ -10,8 +11,7 @@ export const metadata = {
 }
 
 const page: React.FC = async () => {
-    const entriesMenu = await getMenu('entries') as EntriesMenuType[]
-
+    const entriesMenu = await getMenu('entries') as MenuType4All[]
     return (
         <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem] lg:min-w-[90rem]">
             <PageImage imgUrl="/entries.jpg" description="imageEntries" />
