@@ -1,3 +1,4 @@
+import { MenuType4All } from "@/app/_lib/types"
 import { EntriesMenuType } from "@/app/components/EntriesMenu"
 import { MenuNavigation } from "@/app/components/MenuNavigation"
 import { PageImage } from "@/app/components/PageImage"
@@ -11,7 +12,7 @@ export const metadata = {
 }
 
 const page: React.FC = async () => {
-    const salads = await getMenu('salads') as EntriesMenuType[]
+    const salads = await getMenu('salads') as MenuType4All[]
 
     return (
         <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem]">
