@@ -1,4 +1,4 @@
-import { EntriesMenuType } from "@/app/components/EntriesMenu"
+import { MenuType4All } from "@/app/_lib/types"
 import { MenuNavigation } from "@/app/components/MenuNavigation"
 import { PageImage } from "@/app/components/PageImage"
 import SecNavigation from "@/app/components/SecNavigation"
@@ -10,7 +10,7 @@ export const metadata = {
 }
 
 const page: React.FC = async() => {
-    const pastas = await getMenu('pastas') as EntriesMenuType[]
+    const pastas = await getMenu('pastas') as MenuType4All[]
     return (
         <div className="flex flex-col items-center pb-6 bg-bGround max-w-[90rem]">
             <PageImage imgUrl="/pasta.jpg" description="imagePastas"/>
