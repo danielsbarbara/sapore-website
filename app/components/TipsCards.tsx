@@ -40,7 +40,7 @@ export const TipsCards: React.FC<TipsCardsProps> = ({ tip }) => {
             </div>
             {(menu as MenuSchema[]).map((_menu, i: number) =>
                 <div className="flex flex-col gap-2 w-full border-b-2 
-                border-orange-200 p-2" key={i}>
+                border-greenCards p-2" key={i}>
                     <div className="flex justify-between w-full">
                         <p className="font-bold">{(_menu[language as keyof typeof _menu] as {name: string}).name}</p>
                         <span>{_menu.price}€</span>

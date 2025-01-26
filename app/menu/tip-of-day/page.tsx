@@ -3,7 +3,7 @@ import { BoxContainer } from "@/app/components/BoxContainer"
 import { PageImage } from "@/app/components/PageImage"
 import SecNavigation from "@/app/components/SecNavigation"
 import { Texts } from "@/app/components/Texts"
-import { TipCards, TipsCards } from "@/app/components/TipsCards"
+import { TipsCards } from "@/app/components/TipsCards"
 import { getTipDay } from "@/app/server/mongoCRUD"
 
 export const metadata = {

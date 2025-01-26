@@ -29,7 +29,8 @@ export interface TipsOfDayType {
         en: string
         fr: string
     }
-    menu: WithId<MenuSchema>[]
+    // menu: WithId<MenuSchema>[]
+    menu: MenuSchema[]
 }
 
 export interface TheMenuType {
